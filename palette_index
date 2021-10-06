@@ -1,0 +1,42 @@
+<html lang="en">
+<html>
+<head>
+    <title>The Full Palette</title>
+</head>
+<body>
+    <header>
+        <!--Logo-->
+    </header>
+    <section>
+        <div class="background-pic">
+            <!--background image seems like-->
+        </div>
+        <div class="menu">
+            <div class="menu-top">
+                <!--heading for menu-->
+            </div>
+            <div class="entrees">
+                <div class="menu-item">
+
+                </div>
+            </div>
+            <div class="main-dish">
+                <div class="menu-item">
+
+                </div>
+            </div>
+            <div class="desserts">
+                <div class="menu-item">
+
+                </div>
+            </div>
+        </div>
+        <div id="order-button">
+
+        </div>
+    </section>
+    <footer>
+        <!--unordered list-->
+    </footer>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <title>Book The Menu You Like</title>
+    <link rel="stylesheet" type=text/css href="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="logo">
+        <img scr="C:\Users\shara\GitProjects\MyRepo\OhMyFood_Proj3-main\images\ohmyfood.png">
+        </div>
+        <div id="searchbar">
+            <div id="search-icon">
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div id="search-space">
+                <input type="text" placeholder="Paris, Belleville">
+            </div>
+        </div>
+    </header>
+    <section>
+        <div id="intro">
+            <div id="how-it-works">
+            <!--How it works-->
+            </div>
+            <div id="book-the-menu">
+                <!--Book the menu-->
+            </div>
+        </div>
+        <div id="restaurants">
+            <!--Pics of restaurants-->
+        </div>
+    </section>
+    <footer>
+        <!--unordered list-->
+    </footer>
+</body>
+</html>
