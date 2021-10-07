@@ -24,6 +24,7 @@ header {
     width: 20%;
     height: 30px;
     display: flex;
+    align-items: center;
     border: 2px solid #F2F2F2;
     background-color: #F2F2F2;
 }
@@ -54,6 +55,123 @@ input {
     width: 100%;
     border-style: none;
     background-color: #F2F2F2;
+}
+
+section {
+    width: 97%;
+    margin: auto;
+}
+
+#intro {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Roboto' , sans-serif;
+}
+
+#how-it-works {
+    width: 40%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#how-it-works-top {
+    width: 95%;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.hiw-item {
+    position: relative;
+    width: 95%;
+    height: 60px;
+    display: flex;
+}
+
+.hiw-number-space {
+    position: absolute;
+    z-index: 2;
+    left: 0px;
+    width: 5%;
+    height: 60px;
+    display: flex;
+    align-items: center; 
+}
+
+.hiw-number {
+    width:100%;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    background-color: #9356DC;
+    border-radius: 20px;
+    color: #ffffff;
+    font-size: small;
+
+}
+
+.hiw-text {
+    position: absolute;
+    z-index: 1;
+    left: 5px;
+    width: 95%;
+    height: 50px;
+    background-color: #F2F2F2;
+    box-shadow: 3px 3px 4px 0px #9f9d9d94;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.hiw-text-icon {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #9f9d9d94;
+}
+
+#book-the-menu {
+    width: 40%;
+    height: 250px;
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#btm-top {
+    width: 70%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+#btm-text {
+    width: 75%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#explore-button {
+    width: 65%;
+    height: 40px;
+    border-radius: 20px;
+    background: linear-gradient(to bottom right, #ff79da 0%, #9356dc 100%);
+    box-shadow: 3px 3px 4px 0px #9f9d9d94;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
 }
 
 @media all and (min-width: 769px) and (max-width: 1100px) {
