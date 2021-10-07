@@ -163,8 +163,7 @@ section {
 }
 
 #explore-button {
-    width: 65%;
-    height: 40px;
+    height: 30px;
     border-radius: 20px;
     background: linear-gradient(to bottom right, #ff79da 0%, #9356dc 100%);
     box-shadow: 3px 3px 4px 0px #9f9d9d94;
@@ -172,6 +171,7 @@ section {
     justify-content: center;
     align-items: center;
     color: #ffffff;
+    padding: 5px;
 }
 
 @media all and (min-width: 769px) and (max-width: 1100px) {
@@ -187,6 +187,50 @@ section {
     input {
         height: 34px;
     }
+
+    section {
+        width: 100%;
+    }
+
+    #intro {
+        flex-direction: column;
+    }
+
+    #how-it-works {
+        width: 100%;
+        height: 100px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+
+    #how-it-works-top {
+        font-size: 30px;
+    }
+
+    .hiw-item {
+        width: 30%;
+    }
+
+    .hiw-text {
+        font-size: 19px;
+    }
+
+    #book-the-menu {
+        width: 100%;
+        height: 150px;
+        flex-wrap: wrap;
+    }
+
+    #btm-top {
+        font-size: 30px;
+    }
+
+    #btm-text {
+        width: unset;
+        height: 80px;
+        font-size: 20px;
+    }
 }
 
 @media all and (max-width: 768px) {
@@ -196,7 +240,7 @@ section {
     header {
         width: 100%;
         height: 90px;
-        margin: 10px 0px 30px 0px;
+        margin: 10px 0px 0px 0px;
         flex-direction: column;
     }
 
@@ -237,5 +281,31 @@ section {
 
     input {
         height: 34px;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    #intro {
+        flex-direction: column-reverse;
+    }
+
+    #how-it-works {
+        width: 100%;
+    }
+
+    #how-it-works-top {
+        text-align: center;
+    }
+
+    .hiw-item {
+        width: 97%;
+    }
+
+    #book-the-menu {
+        width: 100%;
+        height: 150px;
+        flex-wrap: wrap;
     }
 }
