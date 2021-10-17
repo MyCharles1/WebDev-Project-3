@@ -97,7 +97,9 @@ section {
     width: 95%;
     height: 60px;
     display: flex;
+    transition: all 400ms;
 }
+
 
 .hiw-number-space {
     position: absolute;
@@ -134,12 +136,22 @@ section {
     align-items: center;
 }
 
+
+.hiw-text:hover {
+    background-color:#e8dcf7; 
+}
+
+.hiw-text:hover > .hiw-text-icon {
+    color: #9356DC;
+}
+
 .hiw-text-icon {
     width: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #9f9d9d94;
+    transition: all 400ms;
 }
 
 #book-the-menu {
@@ -209,6 +221,24 @@ section {
     height: 450px;
     display: flex;
     flex-direction: column;
+    position: relative;
+}
+
+#new {
+    position: absolute;
+    z-index: 2;
+    left: 70%;
+    top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0px;
+    width: 25%;
+    height: 25px;
+    background-color: #99E2D0;
+    color: green;
+    font-size: 15px;
+    font-weight: bolder;
 }
 
 .rest-pic {
@@ -435,7 +465,7 @@ footer {
     #intro {
         flex-direction: column-reverse;
         align-items: center;
-        margin-bottom: 60px;
+        margin: 0px 0px 60px 0px;
     }
 
     #how-it-works {
