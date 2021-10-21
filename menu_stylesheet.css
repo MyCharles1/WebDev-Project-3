@@ -3,61 +3,230 @@ body {
     margin: auto;
 }
 
+header {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+#back-link-space {
+    width: 15%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 30px;
+}
+
+.back-link {
+    font-size: 25px;
+    color: #a39f9f;
+}
+
+.menu-logo {
+    width: 50%;
+    height: 40px;
+}
+
+section {
+    width: 100%;
+    min-height: 1000px;
+}
+
+.background-menu-pic {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.menu {
+    position: absolute;
+    z-index: 2;
+    top: 260;
+    width: 100%;
+    max-width: 1280px;
+    background-color: #FFF;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-radius: 35px 35px 0px 0px;
+    font-family: 'Roboto' , sans-serif;
+}
+
+.menu-top {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-heading {
+    font-family: 'Shrikhand' , sans-serif;
+    font-size: 30px;
+}
+
+.menu-top-icon-space {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-section {
+    width: 30%;
+    min-height: 450px;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.menu-section-heading {
+    width: 95%;
+    position: relative;
+    display: inline-block;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.menu-section-heading:before {
+    content: '';
+    border-bottom: 3px solid #99E2D0;
+    position: absolute;
+    width: 15%;
+    left: 0%;
+    bottom: -5;
+}
+
+.menu-item {
+    width: 95%;
+    min-height: 50px;
+    margin-bottom: 20px;
+    background-color: white;
+    box-shadow: 3px 3px 4px 0px #9f9d9d94;
+    border-radius: 20px;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-list {
+    list-style-type: none;
+    width: 70%;
+    margin: 0px;
+    padding-inline-start: 10px;
+}
+
+.menu-list-head {
+    margin-bottom: 5px;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.menu-list-descr {
+    font-size: 14px;
+}
+
+.pound-sign {
+    display: flex;
+    align-items: flex-end;
+    margin-right:10px;
+    font-weight: 700;
+}
+
+#explore-button {
+    height: 30px;
+    width: 25%;
+    border-radius: 20px;
+    margin: 60px 0px;
+    background: linear-gradient(to bottom right, #ff79da 0%, #9356dc 100%);
+    box-shadow: 3px 3px 4px 0px #9f9d9d94;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    padding: 5px;
+    transition: all 400ms;
+}
+
+#explore-button:hover {
+    filter: brightness(115%);
+    box-shadow: 3px 3px 4px 0px #69696994;
+}
+
 footer {
     width: 100%;
-    background-color: rgb(32, 31, 31);
+    background-color: rgb(61, 61, 61);
     display: flex;
+    flex-direction: column;
 }
 
 #footer-top {
+    width: 100%;
+    margin: 20px 0px;
+    text-align: center;
     font-family: 'Shrikhand' , sans-serif;
     font-size: 18px;
     color: white;
 }
 
 #footer-list {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0px 40px 0px;
+    padding-inline-start: 0px;
     list-style-type: none;
     font-size: 15px;
     font-family: 'Roboto' , sans-serif;
     color: white;
 }
 
-@media all and (max-width: 768px) {
+.footer-icon {
+    margin-right: 10px;
+}
+
+
+
+@media all and (min-width: 769px) and (max-width: 1100px) {
     body {
         margin: 0px;
     }
 
-
-    header {
-        width: 100%;
-        height: 40px;
-        display: flex;
+    section {
+        min-height: 1300px;
+    }
+    .menu {
+        flex-direction: column;
         align-items: center;
-        padding: 10px 0px;
     }
 
-    #back-link-space {
-        width: 15%;
-        height: 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0px 30px;
+    .menu-section {
+        width: 95%;
+        margin-bottom: 60px;
+        min-height: 200px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-evenly;
     }
 
-    .back-link {
-        font-size: 25px;
-        color: #a39f9f;
+    .menu-section-heading:before {
+        width: 4%;
+    }
+        
+    .menu-item {
+        width: 30%;
     }
 
-    .menu-logo {
-        width: 50%;
-        height: 40px;
-    }
+}
+
+@media all and (max-width: 768px) {
 
     section {
-        width: 100%;
-        height: 1750px;
+        min-height: 1900px;
         background-color: #F2F2F2;
     }
 
@@ -109,6 +278,8 @@ footer {
         width: 100%;
         position: relative;
         display: inline-block;
+        font-weight: 300;
+        font-size: 20px;
     }
 
     .menu-section-heading:before {
@@ -122,8 +293,8 @@ footer {
 
     .menu-item {
         width: 100%;
-        height: 60px;
-        margin-bottom: 40px;
+        height: 50px;
+        margin-bottom: 20px;
         background-color: white;
         box-shadow: 3px 3px 4px 0px #9f9d9d94;
         border-radius: 20px;
@@ -135,12 +306,25 @@ footer {
     .menu-list {
         list-style-type: none;
         width: 70%;
+        margin: 0px;
+        padding-inline-start: 10px;
+    }
+
+    .menu-list-head {
+        margin-bottom: 5px;
+        font-size: 17px;
+        font-weight: 700;
+    }
+
+    .menu-list-descr {
+        font-size: 14px;
     }
 
     .pound-sign {
         display: flex;
         align-items: flex-end;
         margin-right:10px;
+        font-weight: 700;
     }
 
     #explore-button {
@@ -157,21 +341,16 @@ footer {
         padding: 5px;
         transition: all 400ms;
     }
-    
-    #explore-button:hover {
-        filter: brightness(115%);
-        box-shadow: 3px 3px 4px 0px #69696994;
-    }
 
     footer {
         flex-direction: column;
-        position: absolute;
-        bottom: 0;
     }
 
     #footer-top {
+        width: unset;
         padding-left: 40px;
         margin-top: 20px;
+        text-align: left;
     }
 
     #footer-list {
@@ -179,6 +358,7 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+        padding-inline-start: 40px;
     }
 
     .footer-icon {
