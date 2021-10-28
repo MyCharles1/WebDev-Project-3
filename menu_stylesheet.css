@@ -103,13 +103,15 @@ section {
 
 .menu-item {
     width: 95%;
-    min-height: 50px;
+    height: 50px;
+    overflow: hidden;
     margin-bottom: 20px;
     background-color: white;
     box-shadow: 3px 3px 4px 0px #9f9d9d94;
     border-radius: 20px;
     padding: 10px 0px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     animation: menu-item-animation 2s;
 }
@@ -130,9 +132,7 @@ section {
         transform: translateY(10%);
         overflow: hidden;
     }
-    50% {
-        opacity: .5;
-    }
+    
     100% {
         opacity: 1;
         transform: translatY(0);
@@ -158,10 +158,55 @@ section {
 }
 
 .pound-sign {
+    height: 100%;
     display: flex;
     align-items: flex-end;
     margin-right:10px;
     font-weight: 700;
+    transition: all 1000ms ease-in-out;
+}
+
+.checkmark {
+    height: 100%;
+    width: 20%;
+    padding: 10px 0px;
+    border-radius: 0px 20px 20px 0px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #99E2D0;
+    color: #FFF;
+    font-size: 20px;
+    transform: translateX(100%);
+    overflow: hidden;
+}
+
+.menu-item:hover > .checkmark {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: check-slide 1000ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes check-slide {
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.check {
+    transform: rotate(0deg);
+}
+
+.menu-item:hover >.checkmark >.check {
+    animation: check-roll 1000ms;
+}
+
+@keyframes check-roll {
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 #explore-button {
@@ -320,12 +365,11 @@ footer {
 
     .menu-item {
         width: 100%;
-        height: 50px;
         margin-bottom: 20px;
         background-color: white;
         box-shadow: 3px 3px 4px 0px #9f9d9d94;
         border-radius: 20px;
-        padding: 10px 0px;
+        padding: 10px 0px;  
         display: flex;
         justify-content: space-between;
     }
