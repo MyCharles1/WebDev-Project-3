@@ -192,17 +192,24 @@ section {
 .menu-list {
     list-style-type: none;
     width: 70%;
+    overflow: hidden;
     margin: 0px;
     padding-inline-start: 10px;
 }
 
 .menu-list-head {
     margin-bottom: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     font-size: 17px;
     font-weight: 700;
 }
 
 .menu-list-descr {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     font-size: 14px;
 }
 
@@ -218,6 +225,7 @@ section {
 .checkmark {
     height: 100%;
     width: 20%;
+    min-width: 50px;
     padding: 10px 0px;
     border-radius: 0px 20px 20px 0px;
     display: flex;
@@ -325,6 +333,10 @@ footer {
         align-items: center;
     }
 
+    .rest-icon-space {
+        width: 8%;
+    }
+
     .menu-section {
         width: 95%;
         margin-bottom: 60px;
@@ -361,7 +373,7 @@ footer {
     .menu {
         position: absolute;
         z-index: 2;
-        top: 260;
+        top: 260px;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -375,6 +387,10 @@ footer {
         width: 95%;
         display: flex;
         justify-content: space-between;
+    }
+
+    .rest-icon-space {
+        width: 15%;
     }
 
     .menu-heading {
@@ -410,7 +426,7 @@ footer {
         position: absolute;
         width: 15%;
         left: 0%;
-        bottom: -5;
+        bottom: -5px;
     }
 
     .menu-item {

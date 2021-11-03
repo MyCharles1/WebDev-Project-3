@@ -231,7 +231,7 @@ section {
     position: relative;
 }
 
-#new {
+.new {
     position: absolute;
     z-index: 2;
     left: 70%;

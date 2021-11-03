@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<html>
 <head>
     <title>Book The Menu You Like</title>
-    <link href="images\ohmyfood@2x.svg" type="image/icon" rel="shortcut icon">
+    <link href="images/ohmyfood@2x.svg" type="image/icon" rel="shortcut icon">
     <link rel="stylesheet" type=text/css href="homepage_stylesheet.css">
     <link rel="stylesheet" type=text/css href="loading_screen.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,6 +16,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
+<body>
 <div id="loading-screen">
     <div>ohmyfood</div>
     <div class="loader">
@@ -25,10 +25,9 @@
         <div class="loading-circle c3"></div>
     </div>
 </div>
-<body>
     <header>
         <div id="logo-space">
-        <img id="logo" src="images\ohmyfood@2x.svg">
+        <img id="logo" src="images/ohmyfood@2x.svg">
         </div>
         <div id="searchbar">
             <div id="search-icon">
@@ -74,14 +73,14 @@
             <div id="book-the-menu">
                 <div id="btm-top">Book the menu you like</div>
                 <div id="btm-text">Discover top of the art restaurants we picked for you</div>
-                <div id="explore-button">Explore our restaurants</div>
+                <a href="#restaurant-point"><div id="explore-button">Explore our restaurants</div></a>
             </div>
         </div>
         <div id="restaurants">
-            <div id="restaurant-top">Restaurants</div>
+            <div id="restaurant-top"><a id="restaurant-point">Restaurants</a></div>
             <div class="rest-pic-and-title"><a href="palette_index.html">
-                <div id="new">New</div>
-                <img class="rest-pic" src=images\Full-Palette.jpg>
+                <div class="new">New</div>
+                <img class="rest-pic" src=images/Full-Palette.jpg alt="An appetizer from The Full Palette">
                 <div class="rest-title">
                     <ul class="rest-title-list">
                       <li><h4 class="rest-title-head">The Full Palette</h4></li>
@@ -92,8 +91,8 @@
                 </div></a>
             </div>
             <div class="rest-pic-and-title"><a href="enchanted_index.html">
-                <div id="new">New</div>
-                <img class="rest-pic" src=images\Enchanted-Plate.jpg>
+                <div class="new">New</div>
+                <img class="rest-pic" src=images/Enchanted-Plate.jpg alt="An entree and drinks from The Enchanted Plate">
                 <div class="rest-title">
                     <ul class="rest-title-list">
                       <li><h4 class="rest-title-head">The Enchanted Plate</h4></li>
@@ -104,7 +103,7 @@
                 </div></a>
             </div>
             <div class="rest-pic-and-title"><a href="bastille_index.html">
-                <img class="rest-pic" src=images\Bastille.jpg>
+                <img class="rest-pic" src=images/Bastille.jpg alt="A beautifully plated dish from Bastille">
                 <div class="rest-title">
                     <ul class="rest-title-list">
                       <li><h4 class="rest-title-head">Bastille</h4></li>
@@ -115,7 +114,7 @@
                 </div></a>
             </div>
             <div class="rest-pic-and-title"><a href="gourmand_index.html">
-                <img class="rest-pic" src=images\Gourmand.jpg>
+                <img class="rest-pic" src=images/Gourmand.jpg alt="An entree served on a long, rectangular dish at Le Gourmand">
                 <div class="rest-title">
                     <ul class="rest-title-list">
                       <li><h4 class="rest-title-head">Le Gourmand</h4></li>
