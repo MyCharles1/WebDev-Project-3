@@ -138,6 +138,7 @@ section {
     border-radius: 20px;
     display: flex;
     align-items: center;
+    text-align: center;
 }
 
 
@@ -151,6 +152,7 @@ section {
 
 .hiw-text-icon {
     width: 20%;
+    margin-inline-start: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -193,6 +195,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     color: #ffffff;
     padding: 5px;
     transition: all 400ms;
@@ -283,15 +286,16 @@ section {
     width: 40%;
 }
 
-.rest-icon-space .rest-heart path {
+.rest-icon-space .rest-heart path{
     fill: transparent;
     stroke-width: 18px;
     stroke: black;
     transform: scale(1);
 }
 
-.rest-icon-space .rest-heart:hover path {
-    animation: heart-fill-animation 1s linear;
+.rest-icon-space .rest-heart:hover path{
+    animation: heart-fill-animation 1s;
+    animation-fill-mode: forwards;
 }
 
 @keyframes heart-fill-animation {
@@ -307,15 +311,11 @@ section {
         fill-opacity: .25;
     }
 
-    90% {
+    100% {
         stroke-opacity: 1;
         stroke: #9356dc;
         fill: #ff79da;
         fill-opacity: 1;
-    }
-
-    100% {
-        fill-opacity: 0.5;
     }
 }
 
@@ -467,6 +467,7 @@ footer {
         width: 100%;
         height: 40px;
         background-color: #dddbdb;
+        border: none;
     }
 
     #search-icon {

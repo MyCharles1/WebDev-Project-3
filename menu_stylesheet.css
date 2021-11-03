@@ -71,10 +71,50 @@ section {
     font-size: 30px;
 }
 
-.menu-top-icon-space {
+.rest-icon-space {
+    width: 5%;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 20px;
+}
+
+.rest-heart {
+    width: 40%;
+}
+
+.rest-icon-space .rest-heart path{
+    fill: transparent;
+    stroke-width: 18px;
+    stroke: black;
+    transform: scale(1);
+}
+
+.rest-icon-space .rest-heart:hover path{
+    animation: heart-fill-animation 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes heart-fill-animation {
+    0% {
+        stroke-opacity: 1;
+        stroke: #9356dc;
+    }
+
+    25% {
+        stroke-opacity: 1;
+        stroke: #9356dc;
+        fill: #ff79da;
+        fill-opacity: .25;
+    }
+
+    100% {
+        stroke-opacity: 1;
+        stroke: #9356dc;
+        fill: #ff79da;
+        fill-opacity: 1;
+    }
 }
 
 .menu-section {
@@ -140,12 +180,11 @@ section {
     0% {
         opacity: 0;
         transform: translateY(10%);
-        overflow: hidden;
     }
     
     100% {
         opacity: 1;
-        transform: translatY(0);
+        transform: translateY(0);
     }   
 }
 
@@ -173,7 +212,7 @@ section {
     align-items: flex-end;
     margin-right:10px;
     font-weight: 700;
-    transition: all 1000ms ease-in-out;
+    transform: translateX(200%);
 }
 
 .checkmark {
@@ -181,20 +220,21 @@ section {
     width: 20%;
     padding: 10px 0px;
     border-radius: 0px 20px 20px 0px;
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
     background-color: #99E2D0;
     color: #FFF;
     font-size: 20px;
     transform: translateX(100%);
-    overflow: hidden;
 }
 
 .menu-item:hover > .checkmark {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    animation: check-slide 1000ms;
+    animation-fill-mode: forwards;
+}
+
+.menu-item:hover > .pound-sign {
     animation: check-slide 1000ms;
     animation-fill-mode: forwards;
 }
